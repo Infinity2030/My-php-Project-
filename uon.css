@@ -1,0 +1,215 @@
+@import url('https://stockfont.org/?a2b53a2f3a19b7e9faff2c696676b44eb3570fba8fb468d91617302a892813d1');
+
+* {margin: 0; padding: 0;}
+body {background-color: white; font-family: 'Oxygen-Regular';
+	display: grid;
+  grid-template-columns: 10% 70% 20%;
+    grid-template-rows: auto;
+	grid-template-areas: "header header header"
+	"img img aside"
+	". main aside"
+	"footer footer footer";
+}
+
+body > section {grid-area: img; height: 20vh; background-image: url(uni.jpg); background-position: center center;}
+header a { color: white; text-decoration: none; }
+
+main {min-height: 20vh; grid-area: main; padding: 5vw; background-color: #eee;}
+header {background-color: black; grid-area: header;}
+
+aside {background-color: #ddd; min-height: 20px; grid-area: aside; padding: 1vw;}
+aside ul {list-style-type: none; margin-bottom: 1em;}
+aside li {padding-left: 20px;}
+aside > ul > li {font-size: 2em;}
+aside > ul > li > ul {font-size: 0.5em;}
+aside a {color: #333; text-decoration: none}
+footer {color: white; padding: 1em; background-color: black; font-size: 0.7em; grid-area: footer;}
+
+header { display: grid;  grid-template-columns: 10% 90%;}
+header ul {align-self: center; display: grid; grid-template-columns: auto auto auto; grid-template-rows: auto; color: white; list-style-type: none;}
+header > ul > li {font-size: 2em; cursor: pointer; text-align: center;}
+header ul li ul { margin-left: 10vw; text-align: left; display: none; position: absolute; background-color: #333; padding: 20px;}
+header ul li ul li {padding: 1vw;}
+header ul li:hover ul {display: block;}
+
+h1 {font-weight: bold; margin-bottom: 1em;}
+
+p {margin-top: 0.5em; margin-bottom: 0.5em;}
+
+main ul {
+    list-style-type: none;
+}
+
+main ul li {padding: 1em}
+
+main > ul > li:nth-child(odd) {
+    background-color: #ddd
+}
+
+main > ul > li > ul > li:nth-child(odd) {
+    background-color: #fff
+}
+
+main > ul > li > ul > li:nth-child(even) {
+    background-color: #eee
+}
+
+form {
+    display: block;
+    width: 70em
+}
+
+form input, form select {padding: 1em}
+form textarea {height: 15em; padding: 1em}
+form input, form label, form select, form textarea {float: left; width: 30em; margin: 20px}
+form label {clear: left}
+
+header ul li { 
+  position: relative; 
+}
+
+header ul li ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-left: 0;
+  background-color: #333;
+  padding: 20px;
+  max-height: 260px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 9999;
+}
+
+header ul li ul li {
+  display: block;
+  width: 100%;
+  padding: 1vw;
+}
+
+.route-admin-subject-areas .card,
+.route-admin-users .card,
+.route-admin-enquiries .card,
+.route-admin-login .card,
+.route-admin-dashboard .card {
+  max-width: 1100px;
+  margin: 20px auto;
+  box-sizing: border-box;
+}
+
+.route-admin-subject-areas form label,
+.route-admin-subject-areas form input,
+.route-admin-subject-areas form select,
+.route-admin-subject-areas form textarea {
+  float: none !important;
+}
+
+.route-admin-subject-areas form label {
+  display: block;
+  width: auto;
+  margin: 12px 0 6px;
+}
+
+.route-admin-subject-areas form input[type="text"],
+.route-admin-subject-areas form input[type="password"],
+.route-admin-subject-areas form select,
+.route-admin-subject-areas form textarea {
+  display: block;
+  width: 520px;          
+  max-width: 100%;       
+  box-sizing: border-box;
+}
+
+
+.route-admin-subject-areas form textarea {
+  min-height: 160px;
+}
+
+
+.route-admin-subject-areas .card {
+  padding-right: 40px;
+}
+
+.course-box{
+  background:#d9d9d9;
+  padding:24px;
+  margin:24px 0;
+}
+
+.course-box h2{
+  margin-top:0;
+}
+
+.modules-wrap{
+  margin-top:12px;
+}
+
+.module-box{
+  background:#fff;
+  padding:16px;
+  margin:16px 0;
+}
+
+.pagination{
+  margin:20px 0;
+}
+.pagination a{
+  display:inline-block;
+  padding:8px 12px;
+  margin-right:6px;
+  background:#fff;
+  border:1px solid #000;
+  text-decoration:none;
+}
+.pagination a.active{
+  background:#d9d9d9;
+}
+
+input, select, textarea{
+  box-sizing:border-box;
+  max-width:100%;
+}
+main, .card{
+  overflow:visible;
+}
+
+.route-course-search form {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  background: #d9d9d9;
+  padding: 24px;
+  box-sizing: border-box;
+
+  overflow: auto;
+}
+
+.route-course-search form label,
+.route-course-search form input,
+.route-course-search form select,
+.route-course-search form textarea {
+  float: none !important;
+  width: 520px !important;
+  max-width: 100%;
+  margin: 12px 0 !important;
+  display: block;
+  box-sizing: border-box;
+}
+
+.route-course-search form input[type="submit"] {
+  cursor: pointer;
+}
+
+.route-course-search .course-box {
+  max-width: 1100px;
+  margin: 24px auto;
+  box-sizing: border-box;
+  overflow: hidden; 
+}
+
+.route-course-search .module-box {
+  box-sizing: border-box;
+}
+
+
+

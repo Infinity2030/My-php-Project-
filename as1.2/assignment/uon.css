@@ -1,0 +1,66 @@
+@import url('https://stockfont.org/?a2b53a2f3a19b7e9faff2c696676b44eb3570fba8fb468d91617302a892813d1');
+
+* {margin: 0; padding: 0;}
+body {background-color: white; font-family: 'Oxygen-Regular';
+	display: grid;
+  grid-template-columns: 10% 70% 20%;
+    grid-template-rows: auto;
+	grid-template-areas: "header header header"
+	"img img aside"
+	". main aside"
+	"footer footer footer";
+}
+
+body > section {grid-area: img; height: 20vh; background-image: url(uni.jpg); background-position: center center;}
+header a { color: white; text-decoration: none; }
+
+main {min-height: 20vh; grid-area: main; padding: 5vw; background-color: #eee;}
+header {background-color: black; grid-area: header;}
+
+aside {background-color: #ddd; min-height: 20px; grid-area: aside; padding: 1vw;}
+aside ul {list-style-type: none; margin-bottom: 1em;}
+aside li {padding-left: 20px;}
+aside > ul > li {font-size: 2em;}
+aside > ul > li > ul {font-size: 0.5em;}
+aside a {color: #333; text-decoration: none}
+footer {color: white; padding: 1em; background-color: black; font-size: 0.7em; grid-area: footer;}
+
+header { display: grid;  grid-template-columns: 10% 90%;}
+header ul {align-self: center; display: grid; grid-template-columns: auto auto auto; grid-template-rows: auto; color: white; list-style-type: none;}
+header > ul > li {font-size: 2em; cursor: pointer; text-align: center;}
+header ul li ul { margin-left: 10vw; text-align: left; display: none; position: absolute; background-color: #333; padding: 20px;}
+header ul li ul li {padding: 1vw;}
+header ul li:hover ul {display: block;}
+
+h1 {font-weight: bold; margin-bottom: 1em;}
+
+p {margin-top: 0.5em; margin-bottom: 0.5em;}
+
+main ul {
+    list-style-type: none;
+}
+
+main ul li {padding: 1em}
+
+main > ul > li:nth-child(odd) {
+    background-color: #ddd
+}
+
+main > ul > li > ul > li:nth-child(odd) {
+    background-color: #fff
+}
+
+main > ul > li > ul > li:nth-child(even) {
+    background-color: #eee
+}
+
+form {
+    display: block;
+    width: 70em
+}
+
+form input, form select {padding: 1em}
+form textarea {height: 15em; padding: 1em}
+form input, form label, form select, form textarea {float: left; width: 30em; margin: 20px}
+form label {clear: left}
+
